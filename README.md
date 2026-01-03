@@ -1,17 +1,17 @@
 # finance-tracker
 Personal finance management application built in Java. Import spreadsheet data, edit transactions directly, and visualize spending distribution across categories with dynamic pie charts.
 
-# Finance Tracker 💰
+# Finance Tracker
 
 A Java desktop application for personal finance management that loads expense data from `.fin` files, provides transaction management capabilities, and visualizes spending patterns through an interactive pie chart with detailed breakdowns by category.
 
 ## Features
 
-- 📂 **File Import/Export** - Load and save expense data using custom `.fin` file format
-- ✏️ **Transaction Management** - Add, edit, and remove expense entries with detailed information
-- 📊 **Visual Analytics** - Interactive pie chart displaying spending distribution across 8 expense categories
-- 📋 **Detailed Transaction View** - Side panel showing complete transaction history with date, amount, category, and description
-- 🎨 **Category-Based Organization** - Track expenses across categories including:
+- **File Import/Export** - Load and save expense data using custom `.fin` file format
+- **Transaction Management** - Add, edit, and remove expense entries with detailed information
+- **Visual Analytics** - Interactive pie chart displaying spending distribution across 8 expense categories
+- **Detailed Transaction View** - Side panel showing complete transaction history with date, amount, category, and description
+- **Category-Based Organization** - Track expenses across categories including:
   - Utilities
   - Healthcare
   - Rent
@@ -25,7 +25,7 @@ A Java desktop application for personal finance management that loads expense da
 ## Screenshots
 
 ### Main Interface
-![Main Interface](screenshots/main_interface.png)
+![Main Interface](screenshots/Screenshot 2026-01-03 115053.png)
 *Clean interface with input fields for date, amount, merchant, item, and category selection*
 
 ### File Loading
