@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.chart.PieChart?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="viewmodel.ExpenseViewModel"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <top>
+        <MenuBar fx:id="menuBar">
+            <Menu text="File">
+                <MenuItem text="Load expenses from file" onAction="#handleLoadExpenses"/>
+            </Menu>
+            <Menu text="Sort">
+                <MenuItem text="Sort expenses by date" onAction="#handleSortByDate"/>
+                <MenuItem text="Sort expenses by price" onAction="#handleSortByPrice"/>
+                <MenuItem text="Sort expenses by category and price" onAction="#handleSortByCategoryAndPrice"/>
+            </Menu>
+            <Menu text="Help">
+                <MenuItem text="About" onAction="#handleAbout"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <left>
+        <VBox spacing="10" style="-fx-padding: 15;">
+            <Label text="Date:"/>
+            <DatePicker fx:id="datePicker" prefWidth="200"/>
+
+            <Label text="Amount:"/>
+            <TextField fx:id="amountField" prefWidth="200" promptText="0.00"/>
+
+            <Label text="Merchant:"/>
+            <TextField fx:id="merchantField" prefWidth="200"/>
+
+            <Label text="Item:"/>
+            <TextField fx:id="itemField" prefWidth="200"/>
+
+            <Label fx:id="errorLabel" text="Item cannot be null or empty"
+                   style="-fx-text-fill: red;" visible="false"/>
+
+            <Label text="Category:"/>
+            <ComboBox fx:id="categoryComboBox" prefWidth="200"/>
+
+            <HBox spacing="10" style="-fx-padding: 10 0 0 0;">
+                <Button fx:id="addButton" text="Add" onAction="#handleAdd"/>
+                <Button fx:id="editButton" text="Edit" onAction="#handleEdit"/>
+                <Button fx:id="removeButton" text="Remove" onAction="#handleRemove"/>
+            </HBox>
+        </VBox>
+    </left>
+
+    <right>
+        <VBox spacing="10" style="-fx-padding: 15;">
+            <ListView fx:id="expenseListView" prefWidth="350" prefHeight="400" maxHeight="400"/>
+        </VBox>
+    </right>
+
+    <center>
+        <VBox spacing="10" style="-fx-padding: 15;" alignment="CENTER">
+            <Label text="Expenses by category" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+            <PieChart fx:id="expensePieChart" prefHeight="400" prefWidth="400"/>
+        </VBox>
+    </center>
+
+</BorderPane>
