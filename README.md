@@ -25,7 +25,7 @@ A Java desktop application for personal finance management that loads expense da
 ## Screenshots
 
 ### Main Interface
-![Main Interface](screenshots/Screenshot 2026-01-03 115053.png)
+![Main Interface](screenshots/main_interface.png)
 *Clean interface with input fields for date, amount, merchant, item, and category selection*
 
 ### File Loading
@@ -41,11 +41,6 @@ A Java desktop application for personal finance management that loads expense da
 - **Java** - Core programming language
 - **Java FX** 
 - **Custom File I/O** - `.fin` file format for data persistence
-
-## Prerequisites
-
-- Java Development Kit (JDK) 8 or higher
-- Windows/Mac/Linux operating system
 
 ## How to Run
 
